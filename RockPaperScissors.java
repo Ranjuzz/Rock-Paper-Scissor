@@ -105,18 +105,16 @@ public class RockPaperScissors {
         }
         result(playerPoint,computerPoint);
 
-        System.out.println("Do you want to play again?");
+        System.out.println("\nDo you want to play again?");
         String choice = sc.next();
         if(choice.startsWith("y") || choice.startsWith("Y"))
             start();
         else
-            System.out.println("Thanks for playing");
+            System.out.println("Thanks for playing " + player);
     }
 
      public static void main(String[] args) throws InterruptedException {
             start();
-            
-
-            
+            System.err.println(" ");
      }
 }
